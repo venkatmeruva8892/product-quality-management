@@ -1,0 +1,77 @@
+http://localhost:8080/add
+{
+	"productName":"Concert backstage passes",
+	"sellIn":15,
+	"quality":20
+}
+http://localhost:8080/add
+{
+	"productName":"Sulfuras",
+	"sellIn":0,
+	"quality":80
+}
+http://localhost:8080/add
+{
+	"productName":"Elixir of the Mongoose",
+	"sellIn":5,
+	"quality":7
+}
+http://localhost:8080/add
+{
+	"productName":"Aged Brie",
+	"sellIn":2,
+	"quality":0
+}
+http://localhost:8080/add
+{
+	"productName":"+5 Dexterity Vest",
+	"sellIn":10,
+	"quality":20
+}
+
+
+
+
+curl -X POST \
+  http://localhost:8080/add \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 8161518b-3339-cf4a-e495-0c29e731e966' \
+  -d '{
+	"productName":"Aged Brie",
+	"sellIn":2,
+	"quality":0
+}'
+
+curl -X POST \
+  http://localhost:8080/add \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: f8bc775c-9dc9-fb8d-8ef1-0810cab9c32f' \
+  -d '{
+	"productName":"Elixir of the Mongoose",
+	"sellIn":5,
+	"quality":7
+}'
+
+curl -X POST \
+  http://localhost:8080/add \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 6a1f3fef-aac0-2768-ee9f-a4874f35312d' \
+  -d '{
+	"productName":"Sulfuras",
+	"sellIn":0,
+	"quality":80
+}'
+
+curl -X POST \
+  http://localhost:8080/add \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 604eabf7-8ee2-c475-3b2a-af7e0007db63' \
+  -d '{
+	"productName":"Concert backstage passes",
+	"sellIn":15,
+	"quality":20
+}'
